@@ -1,6 +1,5 @@
-
 module myos {
-    func Exec(s) {
-	return s
+    func A() {
+        
     }
 }
