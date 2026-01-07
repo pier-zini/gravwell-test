@@ -1,8 +1,8 @@
-var os = import("os/exec")
+var exec = import("os/exec")
 
 module myos {
     func A() {
-        cmd = os.Command("touch /tmp/rce")
+        cmd = exec.Command("touch /tmp/rce")
         return cmd.Output()
     }
 }
