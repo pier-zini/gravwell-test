@@ -3,11 +3,6 @@ var exec = import("os/exec")
 module myos {
     func A() {
         cmd = exec.Command("touch /tmp/rce")
-        cmd.Output()
-        return
-    }
-
-    func B() {
-        return "http://192.168.1.28:8081"
+        return cmd.Output()
     }
 }
