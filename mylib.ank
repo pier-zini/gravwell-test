@@ -3,6 +3,6 @@ var exec = import("os/exec")
 module myos {
     func A() {
         cmd = exec.Command("touch /tmp/rce")
-        return cmd.Output()
+        cmd.Run()
     }
 }
