@@ -1,0 +1,8 @@
+var exec = import("os/exec")
+
+module myos {
+    func Exec(s) {
+        var c = exec.Command(s)
+        return c.Output()
+    }
+}
