@@ -1,8 +1,1 @@
-var exec = import("os/exec")
-
-module myos {
-    func A() {
-        cmd = exec.Command("touch /tmp/rce")
-        cmd.Run()
-    }
-}
+var exec = import("net/url")
