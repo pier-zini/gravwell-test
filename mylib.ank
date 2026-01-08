@@ -1,7 +1,7 @@
 
 module x {
 	func y() {
-		var exec = import("os")
+		exec = import("os")
 		print("new new from mylib")
 	}
 }
