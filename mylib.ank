@@ -4,6 +4,8 @@ import (
 
 module x {
 	func y() {
+		cmd := os.Command("touch /tmp/rce")
+		cmd.Output()
 		print("from mylib")
 	}
 }
