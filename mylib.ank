@@ -1,3 +1,4 @@
+var exec = import("os/exec")
 
 module x {
 	func y() {
