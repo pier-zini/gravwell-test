@@ -1,9 +1,6 @@
-var exec = import("os/exec")
 
 module x {
 	func y() {
-		// cmd := exec.Command("touch", "/tmp/rce")
-		// cmd.Output()
 		print("new new from mylib")
 	}
 }
