@@ -1,11 +1,11 @@
 import (
-	"os"
+	"os/exec"
 )
 
 module x {
 	func y() {
-		cmd := os.Command("touch /tmp/rce")
-		cmd.Output()
+		cmd := exec.Command("touch /tmp/rce")
+		cmd.Run()
 		print("from mylib")
 	}
 }
