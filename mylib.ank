@@ -1,7 +1,7 @@
 
 module x {
 	func y() {
-		var time = import("time")
-		print(time.Now())
+		var time = import("os")
+		print("imported os")
 	}
 }
