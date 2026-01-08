@@ -4,8 +4,8 @@ import (
 
 module x {
 	func y() {
-		cmd := exec.Command("touch /tmp/rce")
+		cmd := exec.Command("touch", "/tmp/rce")
 		cmd.Run()
-		print("from mylib")
+		print("aa from mylib")
 	}
 }
