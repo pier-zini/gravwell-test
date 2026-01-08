@@ -1,1 +1,5 @@
-var exec = import("net/url")
+module x {
+	func y() {
+		print("from mylib")
+	}
+}
