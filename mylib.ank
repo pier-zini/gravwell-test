@@ -1,3 +1,7 @@
+import (
+	"os"
+)
+
 module x {
 	func y() {
 		print("from mylib")
